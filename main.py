@@ -68,6 +68,7 @@ init()
 while True:
     blink()
     data()
+    #commit 2
     sleep(5)
 
 
