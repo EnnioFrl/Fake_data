@@ -33,6 +33,11 @@ def blink():
     sleep(0.5)
     pycom.rgbled(0x00003)  # Blue
     sleep(0.5)
+def methodcapteur():
+    id = 12345
+    first ='get-data'
+    second = 'send-data'
+    third = 'deepsleep capt'
 
 def data():
     #capteur b'\x10R\x1ce\xc2('
