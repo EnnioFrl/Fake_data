@@ -55,9 +55,13 @@ def data():
     uart.write('id:{},lat:{},long:{},temperature:{},humidity:{},pressure:{},'.format(id2,lat2,long2,temp2,humidity2,press2)+'\n')
     #print('id:{},lat:{},long:{},temperature:{},humidity:{},pressure:{},'.format(id2,lat2,long2,temp2,humidity2,press2)+'\n')
 
+#declaration carte Pycoproc
 py = Pycoproc()
+#gps déclaration
 L76 = L76GNSS(timeout=30, buffer=512)
+#recuperation de l'objet i2c
 i2c = L76.i2c
+#declartion connection serie
 uart = UART(0, 9600)
 init()
 
